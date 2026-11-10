@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Donasi - Bantu Anak Yatim</title>
+  <link rel="stylesheet" href="detail-donasi.css">
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Navbar -->
+    <header class="navbar">
+      <span class="nav-brand">Program Donasi</span>
+    </header>
+
+    <!-- Banner Gambar & Tombol Navigasi -->
+    <div class="banner">
+      <button class="back-btn" onclick="history.back()">&#8592;</button>
+      <a href="profil.html" class="profile-circle">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73x_fKFL98quE8z9lROYPWNXbCMImb7XWOwyhjoiRJw&s" alt="Foto Profil">
+</a>
+    </div>
+
+    <!-- Konten Utama -->
+    <main class="content">
+      <div class="detail-grid">
+        <!-- Kolom Kiri: Informasi Donasi & Progress Bar -->
+        <div class="left-col">
+          <h1 class="title">Bantu Anak Yatim</h1>
+          <div class="amount">Rp25.000.000</div>
+          
+          <div class="progress-info">
+            <span class="target-text">Terkumpul dari RP100.00.000</span>
+            <span class="days-left">30 hari lagi</span>
+          </div>
+
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 25%;">
+              <div class="progress-handle"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Info & Penggalang -->
+        <div class="right-col">
+          <div class="info-group">
+            <h3 class="info-label">Info:</h3>
+            <p class="info-desc">Bantu anak yatim, anda dapat pahala</p>
+          </div>
+
+          <div class="info-group">
+            <h3 class="info-label">Informasi Penggalang:</h3>
+            <div class="organizer-box">
+              <div class="organizer-header">
+                <span class="user-icon"></span>
+                <strong>Pondok Yatim Al-Ikhlas</strong>
+              </div>
+              <div class="organizer-details">
+                <p><span class="label">Alamat</span> <span class="colon">:</span> <span>Surabaya</span></p>
+                <p><span class="label">No. Telp</span> <span class="colon">:</span> <span>0851234567</span></p>
+                <p><span class="label">Email</span> <span class="colon">:</span> <span>Alikhlas@gmail.com</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Aksi -->
+      <div class="action-container">
+  <a href="nominaldonasi.html" style="text-decoration: none;">
+    <button class="donate-btn">Donasi sekarang</button>
+  </a>
+</div>

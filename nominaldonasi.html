@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nominal Donasi</title>
+  <link rel="stylesheet" href="nominaldonasi.css">
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Navbar -->
+    <header class="navbar">
+      <span class="nav-brand">Nominal Donasi</span>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="content">
+      <!-- Header Judul & Tombol Kembali -->
+      <div class="header-title-container">
+       <a href="detail beranda.html" class="back-btn">&#8592;</a>
+        <h1 class="page-title">Silahkan Masukan Nominal Donasi</h1>
+      </div>
+
+      <!-- Form Donasi -->
+      <form class="donation-form" onsubmit="event.preventDefault();">
+        
+        <!-- Box Input Nominal yang Lebih Rapi -->
+        <div class="amount-card">
+          <div class="amount-input-wrapper">
+            <span class="currency-prefix">RP.</span>
+            <input 
+              type="text" 
+              class="amount-input" 
+              id="nominalInput" 
+              placeholder="0" 
+              oninput="formatCurrency(this)"
+              required
+            >
+          </div>
+
+          <!-- Tombol Pilihan Nominal Cepat -->
+          <div class="quick-nominal-group">
+            <button type="button" class="chip-btn" onclick="setNominal(10000)">Rp 10.000</button>
+            <button type="button" class="chip-btn" onclick="setNominal(25000)">Rp 25.000</button>
+            <button type="button" class="chip-btn" onclick="setNominal(50000)">Rp 50.000</button>
+            <button type="button" class="chip-btn" onclick="setNominal(100000)">Rp 100.000</button>
+          </div>
+        </div>
+
+        <!-- Grid Metode & Pesan -->
+        <div class="form-grid">
+          <!-- Kolom Kiri: Pilihan Metode Donasi -->
+          <div class="method-section">
+            <h2 class="section-label">Pilih Metode:</h2>
+            <div class="payment-options">
+              
+              <label class="payment-card">
+                <input type="radio" name="payment_method" value="qris" checked>
+                <div class="payment-content">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/QRIS_logo.svg" alt="QRIS" class="payment-logo">
+                  <span class="payment-name">Qris</span>
+                </div>
+              </label>
+
+              <label class="payment-card">
+                <input type="radio" name="payment_method" value="bca">
+                <div class="payment-content">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia_logo.svg" alt="BCA" class="payment-logo">
+                  <span class="payment-name">BCA</span>
+                </div>
+              </label>
+
+              <label class="payment-card">
+                <input type="radio" name="payment_method" value="bni">
+                <div class="payment-content">
+                  <img src="https://upload.wikimedia.org/wikipedia/id/5/55/BNI_logo.svg" alt="BNI" class="payment-logo">
+                  <span class="payment-name">BNI</span>
+                </div>
+              </label>
+
+              <label class="payment-card">
+                <input type="radio" name="payment_method" value="gopay">
+                <div class="payment-content">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="Gopay" class="payment-logo">
+                  <span class="payment-name">Gopay</span>
+                </div>
+              </label>
+
+              <label class="payment-card">
+                <input type="radio" name="payment_method" value="dana">
+                <div class="payment-content">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_dana_blue.svg" alt="Dana" class="payment-logo">
+                  <span class="payment-name">Dana</span>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Pesan & Doa -->
+          <div class="message-section">
+            <h2 class="section-label">Ketik doa/pesan:</h2>
+            <textarea class="message-textarea" placeholder="Tuliskan doa atau dukungan terbaik Anda di sini..."></textarea>
+          </div>
+        </div>
+
+        <!-- Tombol Donasi -->
+        <div class="action-container">
+          <button type="submit" class="donate-btn">Donasi sekarang</button>
+        </div>
+
+      </form>
+    </main>
+  </div>
+
+  <script>
+    // Format otomatis angka rupiah saat mengetik
+    function formatCurrency(input) {
+      let value = input.value.replace(/\D/g, "");
+      if (value) {
+        input.value = parseInt(value, 10).toLocaleString("id-ID");
+      } else {
+        input.value = "";
+      }
+    }
+
+    // Fungsi klik tombol nominal cepat
+    function setNominal(val) {
+      const input = document.getElementById("nominalInput");
+      input.value = val.toLocaleString("id-ID");
+    }
+  </script>
+</body>
+</html>

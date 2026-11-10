@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Header Navbar */
+.navbar {
+  background-color: #e3e3e3;
+  padding: 16px 40px;
+}
+
+.nav-brand {
+  color: #888888;
+  font-size: 18px;
+}
+
+/* Banner Hero */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #e57300;
+  color: #ffffff;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.profile-circle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Area Konten */
+.content {
+  padding: 30px 40px 40px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* Kolom Kiri */
+.left-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #d97400;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.amount {
+  color: #d97400;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.target-text {
+  color: #a89480;
+}
+
+.days-left {
+  color: #c9935a;
+}
+
+.progress-track {
+  width: 100%;
+  height: 12px;
+  background-color: #ede9f8;
+  border-radius: 6px;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #e57300;
+  border-radius: 6px;
+  position: relative;
+}
+
+.progress-handle {
+  position: absolute;
+  right: -2px;
+  top: -4px;
+  width: 5px;
+  height: 20px;
+  background-color: #b85a00;
+  border-radius: 2px;
+}
+
+/* Kolom Kanan */
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-label {
+  color: #d97400;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.info-desc {
+  color: #d97400;
+  font-size: 14px;
+}
+
+/* Kotak Informasi Penggalang */
+.organizer-box {
+  border: 1.5px solid #d9a05b;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.organizer-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d97400;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.user-icon {
+  width: 18px;
+  height: 18px;
+  background-color: #d97400;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.organizer-details p {
+  display: grid;
+  grid-template-columns: 80px 15px 1fr;
+  color: #d97400;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/* Tombol Donasi */
+.action-container {
+  margin-top: 15px;
+}
+
+.donate-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #e57300;
+  color: #ffffff;
+  border: 1px solid #b85a00;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.donate-btn:hover {
+  background-color: #cc6600;
+}
+
+/* Tampilan Layar HP */
+@media (max-width: 768px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .content, .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .banner {
+    height: 220px;
+  }
+
+  .back-btn {
+    left: 15px;
+    top: 15px;
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+  }
+
+  .profile-circle {
+    right: 15px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.profile-circle {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.profile-circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 3px rgba(229, 115, 0, 0.5);
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}

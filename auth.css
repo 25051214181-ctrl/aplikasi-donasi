@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container Utama */
+.auth-container {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Font Kaligrafi Judul & Tagline */
+.script-title {
+  font-family: 'Alex Brush', cursive;
+  color: #e57300;
+  font-size: 50px;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 24px;
+  line-height: 1.15;
+}
+
+.script-footer {
+  font-family: 'Alex Brush', cursive;
+  color: #e57300;
+  font-size: 44px;
+  text-align: center;
+  margin-top: 28px;
+}
+
+/* Card Outer Frame */
+.auth-card {
+  width: 100%;
+  border: 1.5px solid #e0c8b0;
+  border-radius: 20px;
+  padding: 32px 28px;
+  background-color: #ffffff;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #e57300;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #333333;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #9aa0a6;
+}
+
+.form-group input:focus {
+  border-color: #e57300;
+  box-shadow: 0 0 0 3px rgba(229, 115, 0, 0.15);
+}
+
+/* Tombol Oranye */
+.auth-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #e57300;
+  color: #ffffff;
+  border: 1px solid #cc6600;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.auth-btn:hover {
+  background-color: #cc6600;
+}
+
+.auth-btn:active {
+  transform: scale(0.99);
+}
+
+/* Link Navigasi Antar Halaman */
+.auth-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-links a {
+  color: #e57300;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.2s;
+  width: fit-content;
+}
+
+.auth-links a:hover {
+  color: #b85a00;
+}
+
+/* Responsive Layar Kecil */
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 24px 20px;
+  }
+  .script-title {
+    font-size: 38px;
+  }
+  .script-footer {
+    font-size: 34px;
+  }
+}

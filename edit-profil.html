@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profil Pengguna</title>
+  <link rel="stylesheet" href="profil.css">
+  <script src="profile.js"></script>
+</head>
+<body>
+
+  <div class="page-container">
+    <h1 class="page-title">Edit profil Pengguna</h1>
+
+    <!-- Card Profil (Mode Edit) -->
+    <div class="profile-card">
+      
+      <!-- Hero Banner Oranye -->
+      <div class="hero-banner">
+        <div class="avatar-circle">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73x_fKFL98quE8z9lROYPWNXbCMImb7XWOwyhjoiRJw&s" alt="Foto Profil">
+</div>
+</div>
+        <div class="user-info">
+          <h2 class="user-name">User</h2>
+          <p class="user-email">Pengguna@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Form Input Edit -->
+      <form action="profil.html" class="profile-body">
+        <div class="info-grid">
+          
+          <!-- Kolom Kiri -->
+          <div class="info-column">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" class="input-box" placeholder="Your First Name" value="User">
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <div class="select-wrapper">
+                <select id="gender" class="input-box select-box">
+                  <option value="" disabled selected>Your First Gender</option>
+                  <option value="Pria">Pria</option>
+                  <option value="Wanita">Wanita</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="language">Language</label>
+              <div class="select-wrapper">
+                <select id="language" class="input-box select-box">
+                  <option value="" disabled selected>Your First Language</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="English">English</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan -->
+          <div class="info-column">
+            <div class="form-group">
+              <label for="country">Country</label>
+              <div class="select-wrapper">
+                <select id="country" class="input-box select-box">
+                  <option value="" disabled selected>Your First Country</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Singapore">Singapore</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="section-subtitle">My email Address</label>
+              
+              <div class="email-badge-card">
+                <div class="email-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="email-details">
+                  <span class="email-text">Pengguna@gmail.com</span>
+                  <span class="email-time">1 month ago</span>
+                </div>
+              </div>
+
+              <button type="button" class="btn-add-email">+Add Email Address</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tombol Save Changes -->
+        <div class="action-row">
+          <button type="submit" class="btn-save">Save Changes</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+</html>

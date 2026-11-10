@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Header Navbar */
+.navbar {
+  background-color: #e3e3e3;
+  padding: 16px 40px;
+}
+
+.nav-brand {
+  color: #777777;
+  font-size: 18px;
+}
+
+/* Area Konten */
+.content {
+  padding: 30px 40px 40px;
+}
+
+/* Header Judul & Tombol Kembali */
+.header-title-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.back-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #e57300;
+  color: #ffffff;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(229, 115, 0, 0.3);
+  transition: transform 0.15s, background-color 0.15s;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.back-btn:hover {
+  background-color: #cc6600;
+  transform: scale(1.05);
+}
+
+.page-title {
+  color: #e57300;
+  font-size: 26px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-left: -44px;
+}
+
+/* Card Input Nominal */
+.amount-card {
+  border: 1.5px solid #e0a368;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  background-color: #ffffff;
+}
+
+.amount-input-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px dashed #f0d5be;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.currency-prefix {
+  color: #e57300;
+  font-size: 36px;
+  font-weight: 800;
+  margin-right: 12px;
+  letter-spacing: 0.5px;
+}
+
+.amount-input {
+  border: none;
+  outline: none;
+  font-size: 36px;
+  font-weight: 800;
+  color: #e57300;
+  width: 100%;
+  background: transparent;
+}
+
+.amount-input::placeholder {
+  color: #f5cfab;
+}
+
+/* Tombol Nominal Cepat */
+.quick-nominal-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip-btn {
+  background-color: #fff9f3;
+  border: 1px solid #e0a368;
+  color: #e57300;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chip-btn:hover {
+  background-color: #e57300;
+  color: #ffffff;
+}
+
+/* Grid Layout (Pilihan & Pesan) */
+.form-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 36px;
+  margin-bottom: 30px;
+}
+
+.section-label {
+  color: #e57300;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* List Metode Pembayaran */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-card {
+  display: block;
+  cursor: pointer;
+}
+
+.payment-card input[type="radio"] {
+  display: none;
+}
+
+.payment-content {
+  border: 1.5px solid #d9a05b;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.payment-card:hover .payment-content {
+  border-color: #e57300;
+  background-color: #fffaf5;
+}
+
+.payment-card input[type="radio"]:checked + .payment-content {
+  border-color: #e57300;
+  background-color: #fff3e6;
+  box-shadow: 0 0 0 1px #e57300;
+}
+
+.payment-logo {
+  height: 24px;
+  width: 48px;
+  object-fit: contain;
+  margin-right: 16px;
+}
+
+.payment-name {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Textarea Pesan */
+.message-textarea {
+  width: 100%;
+  height: 280px;
+  border: 1.5px solid #e0a368;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 15px;
+  color: #333333;
+  outline: none;
+  resize: vertical;
+  line-height: 1.5;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.message-textarea:focus {
+  border-color: #e57300;
+  box-shadow: 0 0 0 3px rgba(229, 115, 0, 0.12);
+}
+
+/* Tombol Donasi */
+.action-container {
+  width: 100%;
+}
+
+.donate-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #e57300;
+  color: #ffffff;
+  border: 1px solid #b85a00;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.donate-btn:hover {
+  background-color: #cc6600;
+}
+
+.donate-btn:active {
+  transform: scale(0.99);
+}
+
+/* Tampilan Responsif Layar Kecil (HP) */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .content, .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .page-title {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .header-title-container {
+    justify-content: flex-start;
+  }
+
+  .amount-input, .currency-prefix {
+    font-size: 28px;
+  }
+
+  .message-textarea {
+    height: 180px;
+  }
+}
