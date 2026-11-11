@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detail Donasi - Bantu Anak Yatim</title>
   <link rel="stylesheet" href="detail-donasi.css">
-  <script src="main.js"></script>
 </head>
 <body>
 
@@ -16,11 +15,29 @@
     </header>
 
     <!-- Banner Gambar & Tombol Navigasi -->
-    <div class="banner">
-      <button class="back-btn" onclick="history.back()">&#8592;</button>
+    <div class="banner"> 
+      <!-- Banner Gambar & Tombol Navigasi -->
+<div class="banner"> 
+  <!-- Tombol panah langsung kembali ke Beranda.html -->
+  <a href="Beranda.html" class="back-btn">&#8592;</a>
+  
+  <a href="profil.html" class="profile-circle">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73x_fKFL98quE8z9lROYPWNXbCMImb7XWOwyhjoiRJw&s" alt="Foto Profil">
+  </a>
+
+  <!-- Gambar Banner -->
+  <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" alt="Bantu Anak Yatim" class="banner-img">
+</div>
+      
       <a href="profil.html" class="profile-circle">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73x_fKFL98quE8z9lROYPWNXbCMImb7XWOwyhjoiRJw&s" alt="Foto Profil">
-</a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73x_fKFL98quE8z9lROYPWNXbCMImb7XWOwyhjoiRJw&s" alt="Foto Profil">
+      </a>
+
+      <!-- Gambar Banner Memenuhi Area (URL Aktif) -->
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" alt="Bantu Anak Yatim" class="banner-img">
+    </div>
+
+
     </div>
 
     <!-- Konten Utama -->
@@ -69,7 +86,13 @@
 
       <!-- Tombol Aksi -->
       <div class="action-container">
-  <a href="nominaldonasi.html" style="text-decoration: none;">
-    <button class="donate-btn">Donasi sekarang</button>
-  </a>
-</div>
+        <a href="nominaldonasi.html" style="text-decoration: none;">
+          <button class="donate-btn">Donasi sekarang</button>
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

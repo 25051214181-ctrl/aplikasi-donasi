@@ -388,3 +388,67 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
+
+/* Tombol Panah Kembali di Pojok Kiri Bawah */
+.back-btn-bottom {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #e57300;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, background-color 0.2s;
+  z-index: 99;
+}
+
+.back-btn-bottom:hover {
+  background-color: #cc6600;
+  transform: scale(1.08);
+}
+/* Memastikan seluruh card berlatar putih */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.profile-body {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+/* Tombol Panah Kembali di Pojok Kiri Bawah */
+.back-btn-bottom {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #e57300;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, background-color 0.2s;
+  z-index: 99;
+}
+
+.back-btn-bottom:hover {
+  background-color: #cc6600;
+  transform: scale(1.08);
+}
